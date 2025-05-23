@@ -9,6 +9,7 @@ public class GameDTO {
     private Integer year;
     private String platforms;
     private Double score;
+    private String imgUrl;
     private String shortDescription;
     private String longDescription;
 
@@ -54,6 +55,14 @@ public class GameDTO {
 
     public Double getScore() {
         return score;
+    }
+
+    public String getImgUrl() {
+        return imgUrl;
+    }
+
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
     }
 
     public void setScore(Double score) {

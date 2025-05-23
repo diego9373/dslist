@@ -39,14 +39,20 @@ public class GameList {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
-        GameList gameList = (GameList) o;
-        return Objects.equals(id, gameList.id);
+    public int hashCode() {
+        return Objects.hashCode(id);
     }
 
     @Override
-    public int hashCode() {
-        return Objects.hashCode(id);
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        GameList other = (GameList) obj;
+        return Objects.equals(id,other.id);
+
     }
 }
