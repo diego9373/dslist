@@ -1,6 +1,6 @@
 package com.devsuperior.dslist.projections;
 
-public interface GameMinPorjection {
+public interface GameMinProjection {
 
     Long getId();
     String getTitle();
