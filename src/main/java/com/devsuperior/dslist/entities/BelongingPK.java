@@ -9,9 +9,11 @@ import java.util.Objects;
 public class BelongingPK {
 
     @ManyToOne
-    @JoinColumn(name = "list_id")
+    @JoinColumn(name = "game_id")
     private Game game;
 
+    @ManyToOne
+    @JoinColumn(name = "list_id")
     private GameList list;
 
     public Game getGame(){
